@@ -45,6 +45,14 @@ static NSString *const SUUpdatePermissionPromptTouchBarIdentifier = @"" SPARKLE_
     IBOutlet NSButton *_anonymousInfoDisclosureButton;
     IBOutlet NSLayoutConstraint *_placeholderHeightLayoutConstraint;
     
+    IBOutlet NSTextField *_checkUpdateAutomatically;
+    IBOutlet NSTextField *_doNotLocalize;
+    
+    IBOutlet NSButton *_systemProfileBt;
+    
+    IBOutlet NSButton *_autoDownloadUpdatesBt;
+    IBOutlet NSTextField *_systemProfileInfoLabel;
+    
     void (^_reply)(SUUpdatePermissionResponse *);
 }
 
@@ -95,6 +103,14 @@ static NSString *const SUUpdatePermissionPromptTouchBarIdentifier = @"" SPARKLE_
     [_stackView addArrangedSubview:_placeholderView];
     [_stackView addArrangedSubview:_moreInfoView];
     [_stackView addArrangedSubview:_responseView];
+    
+    [_checkButton setTitle:@"Check Automatically".localized];
+    [_cancelButton setTitle:@"Don't Check".localized];
+    [_checkUpdateAutomatically setStringValue:@"Check for updates automatically?".localized];
+    [_doNotLocalize setStringValue:@"DO NOT LOCALIZE".localized];
+    [_systemProfileBt setTitle:@"Include anonymous system profile".localized];
+    [_autoDownloadUpdatesBt setTitle:@"Automatically download and install updates".localized];
+    [_systemProfileInfoLabel setStringValue:@"Anonymous system profile information is used to help us plan future development work. Please contact us if you have any questions about this.\n\nThis is the information that would be sent:".localized];
 }
 
 - (BOOL)tableView:(NSTableView *) __unused tableView shouldSelectRow:(NSInteger) __unused row { return NO; }

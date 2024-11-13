@@ -113,7 +113,7 @@
 
 - (void)setLanguage:(NSString *)language
 {
-    [[XLanguageManager sharedManager] localizedStringForKey:language];
+    [[XLanguageManager sharedManager] setCurrentLanguage:language];
 }
 
 @end

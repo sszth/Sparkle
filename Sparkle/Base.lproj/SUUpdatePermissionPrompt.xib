@@ -9,9 +9,12 @@
         <customObject id="-2" userLabel="File's Owner" customClass="SUUpdatePermissionPrompt">
             <connections>
                 <outlet property="_anonymousInfoDisclosureButton" destination="JW6-0z-Ud3" id="grm-Uj-KJs"/>
+                <outlet property="_autoDownloadUpdatesBt" destination="BId-kb-eYW" id="vMh-z5-K8e"/>
                 <outlet property="_automaticallyDownloadUpdatesView" destination="37T-Ef-DtX" id="Ojd-zE-6Kd"/>
                 <outlet property="_cancelButton" destination="cFC-wV-H3j" id="B1o-H0-cr1"/>
                 <outlet property="_checkButton" destination="sMh-ha-r7R" id="2Oc-EC-EcG"/>
+                <outlet property="_checkUpdateAutomatically" destination="IgD-Pj-pc8" id="QHh-XN-2vZ"/>
+                <outlet property="_doNotLocalize" destination="tgW-Jp-Aia" id="JZh-4M-atf"/>
                 <outlet property="_infoChoiceView" destination="ov1-yV-Uol" id="RSd-bn-7bu"/>
                 <outlet property="_moreInfoView" destination="39" id="ceJ-4H-FHd"/>
                 <outlet property="_placeholderHeightLayoutConstraint" destination="yis-HR-OIe" id="npL-hg-wRq"/>
@@ -19,6 +22,8 @@
                 <outlet property="_promptView" destination="Yrl-Dt-Qvb" id="qbO-fw-1YD"/>
                 <outlet property="_responseView" destination="0CP-x7-YFK" id="AcW-Md-hSP"/>
                 <outlet property="_stackView" destination="qNw-uD-4Bg" id="EIt-kn-pJ0"/>
+                <outlet property="_systemProfileBt" destination="a90-Iq-FgS" id="0Bu-Df-6RH"/>
+                <outlet property="_systemProfileInfoLabel" destination="46" id="Ejv-Zf-CBs"/>
                 <outlet property="window" destination="5" id="126"/>
             </connections>
         </customObject>
