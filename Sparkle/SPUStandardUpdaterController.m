@@ -17,6 +17,9 @@
 #import "SULocalizations.h"
 #import <AppKit/AppKit.h>
 
+#import "NSString+Localization.h"
+#import "XLanguageManager.h"
+
 // We use public instance variables instead of properties for the updater / user driver delegates
 // because we want them to be connectable outlets from Interface Builder, but we do not want their setters to be invoked
 // programmatically.
@@ -106,6 +109,11 @@
         return _updater.canCheckForUpdates;
     }
     return YES;
+}
+
+- (void)setLanguage:(NSString *)language
+{
+    [[XLanguageManager sharedManager] localizedStringForKey:language];
 }
 
 @end

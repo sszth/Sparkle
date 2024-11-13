@@ -116,6 +116,8 @@ SU_EXPORT @interface SPUStandardUpdaterController : NSObject
  */
 - (IBAction)checkForUpdates:(nullable id)sender;
 
+- (void)setLanguage:(NSString *)language;
+
 @end
 
 NS_ASSUME_NONNULL_END

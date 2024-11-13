@@ -407,6 +407,14 @@ static NSString *const SUUpdateAlertTouchBarIdentifier = @"" SPARKLE_BUNDLE_IDEN
     }
 
     [window center];
+    
+    [_skipButton setTitle:@"Skip This Version".localized];
+    [_laterButton setTitle:@"Remind Me Later".localized];
+    [_automaticallyInstallUpdatesButton setTitle:@"Automatically download and install updates in the future".localized];
+    [_installButton setTitle:@"Install Update".localized];
+    [_releaseNotesBoxView setTitle:@"Release Notes:".localized];
+    [window setTitle:@"Software Update".localized];
+//    IBOutlet NSTextField *_descriptionField;
 }
 
 - (void)windowDidBecomeKey:(NSNotification *)__unused note
