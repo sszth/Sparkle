@@ -3163,7 +3163,7 @@
 			packageReferences = (
 				727DBAE326B5BBFD00111F0C /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 			);
-			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			productRefGroup = 0867D691FE84028FC02AAC07 /* Sparkle */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -4242,7 +4242,7 @@
 			baseConfigurationReference = FA1941CA0D94A70100DD942E /* ConfigFrameworkDebug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = QG59HK27Z9;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 			};
 			name = Debug;
 		};
